@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Percentage Calculator – Find What Percent One Number is of Another</title>
+    <meta name="description" content="Free Percentage Calculator. Enter any two numbers to instantly find the percentage one is of the other. Perfect for test scores, discounts, and everyday math.">
+    <meta name="keywords" content="percentage calculator, percent calculator, ratio calculator, what percent is, percentage of number, proportion calculator">
+    <meta name="author" content="Grade Calculator">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://gradecalculator.com/percentage-calculator/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Grade Calculator">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Percentage Calculator – Instant Ratio & Proportion Finder">
+    <meta property="og:description" content="Find what percent any number is of another in seconds. Free, fast, and no sign-up required.">
+    <meta property="og:url" content="https://gradecalculator.com/percentage-calculator/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Percentage Calculator – Fast Ratio Finder">
+    <meta name="twitter:description" content="Find what percentage one number is of another in seconds. Free, instant, no sign-up required.">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "Percentage Calculator",
+          "url": "https://gradecalculator.com/percentage-calculator/",
+          "description": "Free tool to calculate what percentage one number is of another. Useful for test scores, discounts, ratios, and more.",
+          "applicationCategory": "EducationApplication",
+          "operatingSystem": "Any",
+          "browserRequirements": "Requires JavaScript",
+          "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+          "featureList": ["Instant percentage calculation", "Any two numbers", "No restrictions"],
+          "provider": {"@type": "Organization", "name": "Grade Calculator", "url": "https://gradecalculator.com"}
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://gradecalculator.com/"},
+            {"@type":"ListItem","position":2,"name":"Percentage Calculator","item":"https://gradecalculator.com/percentage-calculator/"}
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does percent actually mean?",
+              "acceptedAnswer": {"@type": "Answer", "text": "The word percent comes from the Latin 'per centum' meaning 'per hundred'. So 50% means 50 out of every 100."}
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/calculators.css">
+</head>
+<body>
+
+<header id="site-header" class="site-header">
+  <div class="container header-container">
+    <a href="/" class="logo">Grade Calculator</a>
+    <nav id="nav-menu" class="nav-menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Calculators <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="/easy-grade-calculator/">Easy Grade Calculator</a></li>
+            <li><a href="/average-grade-calculator/">Average Grade Calculator</a></li>
+            <li><a href="/final-grade-calculator/">Final Grade Calculator</a></li>
+            <li><a href="/gpa-calculator/">GPA Calculator</a></li>
+            <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">GPA Tools <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="/high-school-gpa-calculator/">High School GPA Calculator</a></li>
+            <li><a href="/cumulative-gpa-calculator/">Cumulative GPA Calculator</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact/">Contact</a></li>
+        <li class="dropdown nav-cta">
+          <a href="javascript:void(0)" class="dropdown-toggle">Explore Tools <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+          <ul class="dropdown-menu mega-grid">
+            <li><a href="/easy-grade-calculator/"><span class="tool-icon">🎯</span> Easy Grade</a></li>
+            <li><a href="/average-grade-calculator/"><span class="tool-icon">📊</span> Average Grade</a></li>
+            <li><a href="/final-grade-calculator/"><span class="tool-icon">🎓</span> Final Grade</a></li>
+            <li><a href="/gpa-calculator/"><span class="tool-icon">📐</span> GPA Calc</a></li>
+            <li><a href="/percentage-calculator/"><span class="tool-icon">🔢</span> Percentage</a></li>
+            <li><a href="/high-school-gpa-calculator/"><span class="tool-icon">🏫</span> High School</a></li>
+            <li><a href="/cumulative-gpa-calculator/"><span class="tool-icon">📈</span> Cumulative</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+    <section class="container calculator-wrapper">
+        <div class="glass-card">
+            <h1>Percentage Calculator</h1>
+            <p>Determine what percentage one number is of another number.</p>
+            
+            <form id="pct-form" class="calc-form">
+                <div class="form-group" style="display:flex; flex-direction:row; align-items:center; gap: 1rem;">
+                    <div style="flex:1;">
+                        <label for="pct-part">What is...</label>
+                        <input type="number" id="pct-part" placeholder="Partial Amount (e.g. 25)" required step="any">
+                    </div>
+                    <div style="font-weight: 600; padding-top: 1.5rem;">out of</div>
+                    <div style="flex:1;">
+                        <label for="pct-whole">Total Amount</label>
+                        <input type="number" id="pct-whole" placeholder="Full Amount (e.g. 100)" required step="any">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-primary">Calculate Percentage</button>
+            </form>
+
+            <div id="pct-result-box" class="calc-result-box">
+                <div class="result-label">Result:</div>
+                <div id="pct-value" class="result-value">0%</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container seo-content">
+        <div class="content-box">
+            <h2>Percentage Calculator</h2>
+            <p>A Percentage Calculator helps you quickly find percentages without doing manual math. You can use it to calculate marks, discounts, increases, or comparisons by simply entering values, and the tool gives instant results. Whether you want to know what percentage one number is of another, increase a value by a percentage, or find your exam score percentage, it makes the process fast, accurate, and easy to understand.</p>
+        </div>
+    </section>
+
+
+
+    <section class="container">
+        <div class="related-tools">
+            <h2>More Calculator Tools</h2>
+            <div class="tags-container">
+                <a href="/easy-grade-calculator/" class="tool-tag">Easy Grade Calculator</a>
+                <a href="/average-grade-calculator/" class="tool-tag">Average Grade Calculator</a>
+                <a href="/final-grade-calculator/" class="tool-tag">Final Grade Calculator</a>
+                <a href="/gpa-calculator/" class="tool-tag">GPA Calculator</a>
+                <a href="/percentage-calculator/" class="tool-tag">Percentage Calculator</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Grade Calculator</h4>
+        <p>Your go-to modern tools for academic success. Clean, fast, and easy to use.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/easy-grade-calculator/">Easy Grade Calculator</a></li>
+          <li><a href="/average-grade-calculator/">Average Grade Calculator</a></li>
+          <li><a href="/final-grade-calculator/">Final Grade Calculator</a></li>
+          <li><a href="/gpa-calculator/">GPA Calculator</a></li>
+          <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-conditions/">Terms & Conditions</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Grade Calculator. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/calculators.js"></script>
+</body>
+</html>

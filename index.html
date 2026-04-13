@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Grade Calculator – Free GPA, Final Grade & Percentage Tools for Students</title>
+  <meta name="description" content="Free online grade calculators for students. Calculate GPA, final exam scores, grade averages, percentages and more — instantly, no sign-up required.">
+  <meta name="keywords" content="grade calculator, GPA calculator, final grade calculator, average grade calculator, percentage calculator, high school GPA, cumulative GPA">
+  <meta name="author" content="Grade Calculator">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://gradecalculator.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Grade Calculator">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Grade Calculator – Free GPA, Final Grade & Percentage Tools">
+  <meta property="og:description" content="Free online grade calculators for students. Instant results for GPA, final exam scores, grade averages, and percentages. No sign-up needed.">
+  <meta property="og:url" content="https://gradecalculator.com/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Grade Calculator – Free Tools for Students">
+  <meta name="twitter:description" content="Free online grade calculators. GPA, final grades, averages, percentages — instant results, no sign-up needed.">
+
+  <!-- JSON-LD: WebSite + Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://gradecalculator.com/#website",
+        "url": "https://gradecalculator.com/",
+        "name": "Grade Calculator",
+        "description": "Free online grade calculators for students — GPA, final grades, averages, percentages and more.",
+        "inLanguage": "en-US",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://gradecalculator.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://gradecalculator.com/#organization",
+        "name": "Grade Calculator",
+        "url": "https://gradecalculator.com/",
+        "description": "Provider of free academic calculators for students: GPA, final grade, average, and percentage tools.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "url": "https://gradecalculator.com/contact/"
+        },
+        "sameAs": []
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://gradecalculator.com/#webpage",
+        "url": "https://gradecalculator.com/",
+        "name": "Grade Calculator – Free GPA, Final Grade & Percentage Tools for Students",
+        "isPartOf": {"@id": "https://gradecalculator.com/#website"},
+        "about": {"@id": "https://gradecalculator.com/#organization"},
+        "description": "Free online grade calculators for students. Calculate GPA, final exam scores, grade averages, and percentages — instantly.",
+        "inLanguage": "en-US",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://gradecalculator.com/"}]
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Overlay (mobile) -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <header id="site-header" class="site-header">
+    <div class="container header-container">
+      <a href="/" class="logo">Grade Calculator</a>
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Calculators <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+              </svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="/easy-grade-calculator/">Easy Grade Calculator</a></li>
+              <li><a href="/average-grade-calculator/">Average Grade Calculator</a></li>
+              <li><a href="/final-grade-calculator/">Final Grade Calculator</a></li>
+              <li><a href="/gpa-calculator/">GPA Calculator</a></li>
+              <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">GPA Tools <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+              </svg></a>
+            <ul class="dropdown-menu">
+              <li><a href="/high-school-gpa-calculator/">High School GPA Calculator</a></li>
+              <li><a href="/cumulative-gpa-calculator/">Cumulative GPA Calculator</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact/">Contact</a></li>
+          <li class="dropdown nav-cta">
+            <a href="javascript:void(0)" class="dropdown-toggle">Explore Tools <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+              </svg></a>
+            <ul class="dropdown-menu mega-grid">
+              <li><a href="/easy-grade-calculator/"><span class="tool-icon">🎯</span> Easy Grade</a></li>
+              <li><a href="/average-grade-calculator/"><span class="tool-icon">📊</span> Average Grade</a></li>
+              <li><a href="/final-grade-calculator/"><span class="tool-icon">🎓</span> Final Grade</a></li>
+              <li><a href="/gpa-calculator/"><span class="tool-icon">📐</span> GPA Calc</a></li>
+              <li><a href="/percentage-calculator/"><span class="tool-icon">🔢</span> Percentage</a></li>
+              <li><a href="/high-school-gpa-calculator/"><span class="tool-icon">🏫</span> High School</a></li>
+              <li><a href="/cumulative-gpa-calculator/"><span class="tool-icon">📈</span> Cumulative</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ════════════ HERO ════════════ -->
+    <section class="hero container">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Free Academic Tools &mdash; No Sign-up Required
+      </div>
+      <h1>Calculate Your Grades<br><span class="gradient-text">with Ease & Precision</span></h1>
+      <p>A suite of modern, intelligent grade calculators designed to help students and teachers find averages,
+        finals, percentages, and GPAs &mdash; instantly and accurately.</p>
+        <a href="#tools" class="btn-primary" id="hero-scroll-btn">
+          Explore All Tools
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </a>
+        <a href="/easy-grade-calculator/" class="btn-outline">Try Easy Calculator</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value">7+</div>
+          <div class="stat-label">Calculator Tools</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">100%</div>
+          <div class="stat-label">Free Forever</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">0s</div>
+          <div class="stat-label">Instant Results</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">∞</div>
+          <div class="stat-label">Calculations</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════ MATH CALCULATOR ════════════ -->
+    <section id="math-calculator" class="container">
+      <div class="section-header">
+        <span class="section-tag">School Math</span>
+        <h2>Quick Math Calculator</h2>
+        <p>A free, school-ready calculator with scientific functions — right on the page, no app needed.</p>
+      </div>
+
+      <div class="mc-shell">
+
+        <!-- Mode toggle -->
+        <div class="mc-mode-bar">
+          <button class="mc-mode-btn active" id="mc-mode-std" onclick="mcSetMode('standard')">Standard</button>
+          <button class="mc-mode-btn" id="mc-mode-sci" onclick="mcSetMode('scientific')">Scientific</button>
+          <button class="mc-history-toggle" id="mc-hist-btn" onclick="mcToggleHistory()" title="History">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            History
+          </button>
+        </div>
+
+        <div class="mc-body">
+
+          <!-- Calculator panel -->
+          <div class="mc-calculator" id="mc-calculator">
+
+            <!-- Display -->
+            <div class="mc-display">
+              <div class="mc-expr" id="mc-expr">&nbsp;</div>
+              <div class="mc-result" id="mc-result">0</div>
+              <div class="mc-angle-label" id="mc-angle-label" style="display:none;">DEG</div>
+            </div>
+
+            <!-- Scientific rows (hidden in standard mode) -->
+            <div class="mc-sci-rows" id="mc-sci-rows">
+              <div class="mc-row">
+                <button class="mc-btn mc-fn" onclick="mcAngleToggle()" id="mc-angle-btn" title="Toggle Degrees/Radians">DEG</button>
+                <button class="mc-btn mc-fn" onclick="mcFn('sin')" title="Sine">sin</button>
+                <button class="mc-btn mc-fn" onclick="mcFn('cos')" title="Cosine">cos</button>
+                <button class="mc-btn mc-fn" onclick="mcFn('tan')" title="Tangent">tan</button>
+              </div>
+              <div class="mc-row">
+                <button class="mc-btn mc-fn" onclick="mcFn('log')" title="Log base 10">log</button>
+                <button class="mc-btn mc-fn" onclick="mcFn('ln')" title="Natural log">ln</button>
+                <button class="mc-btn mc-fn" onclick="mcInsert('Math.PI')" title="Pi">π</button>
+                <button class="mc-btn mc-fn" onclick="mcInsert('Math.E')" title="Euler's number">e</button>
+              </div>
+              <div class="mc-row">
+                <button class="mc-btn mc-fn" onclick="mcFn('sqrt')" title="Square root">√x</button>
+                <button class="mc-btn mc-fn" onclick="mcPower(2)" title="Squared">x²</button>
+                <button class="mc-btn mc-fn" onclick="mcPower(3)" title="Cubed">x³</button>
+                <button class="mc-btn mc-fn" onclick="mcInsert('**')" title="Power">xʸ</button>
+              </div>
+            </div>
+
+            <!-- Standard keypad -->
+            <div class="mc-keypad" id="mc-keypad">
+              <!-- Row 1 -->
+              <div class="mc-row">
+                <button class="mc-btn mc-clear" onclick="mcClear()" id="mc-ac-btn">AC</button>
+                <button class="mc-btn mc-op" onclick="mcToggleSign()" title="Toggle sign">+/−</button>
+                <button class="mc-btn mc-op" onclick="mcPercent()" title="Percent">%</button>
+                <button class="mc-btn mc-op mc-op--main" onclick="mcAppend('/')" title="Divide">÷</button>
+              </div>
+              <!-- Row 2 -->
+              <div class="mc-row">
+                <button class="mc-btn mc-num" onclick="mcAppend('7')">7</button>
+                <button class="mc-btn mc-num" onclick="mcAppend('8')">8</button>
+                <button class="mc-btn mc-num" onclick="mcAppend('9')">9</button>
+                <button class="mc-btn mc-op mc-op--main" onclick="mcAppend('*')" title="Multiply">×</button>
+              </div>
+              <!-- Row 3 -->
+              <div class="mc-row">
+                <button class="mc-btn mc-num" onclick="mcAppend('4')">4</button>
+                <button class="mc-btn mc-num" onclick="mcAppend('5')">5</button>
+                <button class="mc-btn mc-num" onclick="mcAppend('6')">6</button>
+                <button class="mc-btn mc-op mc-op--main" onclick="mcAppend('-')" title="Subtract">−</button>
+              </div>
+              <!-- Row 4 -->
+              <div class="mc-row">
+                <button class="mc-btn mc-num" onclick="mcAppend('1')">1</button>
+                <button class="mc-btn mc-num" onclick="mcAppend('2')">2</button>
+                <button class="mc-btn mc-num" onclick="mcAppend('3')">3</button>
+                <button class="mc-btn mc-op mc-op--main" onclick="mcAppend('+')" title="Add">+</button>
+              </div>
+              <!-- Row 5 -->
+              <div class="mc-row">
+                <button class="mc-btn mc-num mc-zero" onclick="mcAppend('0')">0</button>
+                <button class="mc-btn mc-num" onclick="mcDot()">.</button>
+                <button class="mc-btn mc-op" onclick="mcBackspace()" title="Delete">⌫</button>
+                <button class="mc-btn mc-equals" onclick="mcEquals()">=</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- History panel -->
+          <div class="mc-history" id="mc-history" style="display:none;">
+            <div class="mc-history-header">
+              <span>Calculation History</span>
+              <button class="mc-clear-hist" onclick="mcClearHistory()">Clear all</button>
+            </div>
+            <div class="mc-history-list" id="mc-history-list">
+              <div class="mc-hist-empty">No calculations yet</div>
+            </div>
+          </div>
+
+        </div><!-- /mc-body -->
+
+        <!-- School tip bar -->
+        <div class="mc-tip-bar">
+          <span class="mc-tip-icon">💡</span>
+          <span id="mc-tip-text">Tip: Switch to Scientific mode for sin, cos, log, √ and more school functions.</span>
+        </div>
+
+      </div><!-- /mc-shell -->
+    </section>
+
+    <section id="tools" class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Tools</span>
+        <h2>Explore All Tools List</h2>
+        <p>Choose a calculation tool to help manage your academic performance.</p>
+      </div>
+
+      <div class="tools-grid">
+
+        <a href="/easy-grade-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">🎯</div>
+          <h3>Easy Grade Calculator</h3>
+          <p>The fastest way to find your school grades. Simply enter total questions and wrong answers.</p>
+          <span class="tool-count">Standard Scale</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+        <a href="/average-grade-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">📊</div>
+          <h3>Average Grade Calculator</h3>
+          <p>Calculate your weighted average grade based on a set of assignments or projects.</p>
+          <span class="tool-count">Weighted Averages</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+        <a href="/final-grade-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">🎓</div>
+          <h3>Final Grade Calculator</h3>
+          <p>Find out exactly what you need to score on your final exam to reach your goal.</p>
+          <span class="tool-count">Goal Tracking</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+        <a href="/gpa-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">📐</div>
+          <h3>GPA Calculator</h3>
+          <p>Determine your semester or yearly GPA based on standard letter grades and course credits.</p>
+          <span class="tool-count">4.0 & 5.0 Scales</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+        <a href="/percentage-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">🔢</div>
+          <h3>Percentage Calculator</h3>
+          <p>Quickly calculate percentages, increases, or decreases for your grades and test scores.</p>
+          <span class="tool-count">Instant Results</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+        <a href="/high-school-gpa-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">🏫</div>
+          <h3>High School GPA Calculator</h3>
+          <p>Specifically designed for high school grading scales, including weighted and unweighted GPAs.</p>
+          <span class="tool-count">Weighted Support</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+        <a href="/cumulative-gpa-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">📈</div>
+          <h3>Cumulative GPA Calculator</h3>
+          <p>Track your overall GPA across multiple semesters and build per-semester breakdowns.</p>
+          <span class="tool-count">Multi-Semester</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+        <!-- Additional Variation Tools for SEO & Layout -->
+        <a href="/easy-grade-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">📝</div>
+          <h3>Letter Grade Calculator</h3>
+          <p>Quickly convert your test scores and percentages into their equivalent letter grades.</p>
+          <span class="tool-count">A to F Grading</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+        <a href="/average-grade-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">⚖️</div>
+          <h3>Weighted Grade Calculator</h3>
+          <p>Calculate your grade when assignments have different weights or percentage values.</p>
+          <span class="tool-count">Custom Weights</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+        <a href="/gpa-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">🏛️</div>
+          <h3>College GPA Calculator</h3>
+          <p>Easily determine your college or university GPA based on course credit hours and points.</p>
+          <span class="tool-count">University Ready</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+        <a href="/easy-grade-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">📏</div>
+          <h3>Points Grade Calculator</h3>
+          <p>Found out your grade when you know the total points earned versus points possible.</p>
+          <span class="tool-count">Total Points</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+        <a href="/average-grade-calculator/" class="tool-card fade-up">
+          <div class="tool-card-icon">📅</div>
+          <h3>Semester Grade Calculator</h3>
+          <p>Plan and calculate your total semester grade to ensure you meet your academic targets.</p>
+          <span class="tool-count">Term View</span>
+          <div class="view-tool">Use Tool <svg viewBox="0 0 24 24" width="16" height="16"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo">Grade Calculator</a>
+          <p>Your go-to modern tools for academic success. Clean, fast, and completely free to use — always.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Calculators</h4>
+          <ul>
+            <li><a href="/easy-grade-calculator/">Easy Grade Calculator</a></li>
+            <li><a href="/average-grade-calculator/">Average Grade Calculator</a></li>
+            <li><a href="/final-grade-calculator/">Final Grade Calculator</a></li>
+            <li><a href="/gpa-calculator/">GPA Calculator</a></li>
+            <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+            <li><a href="/high-school-gpa-calculator/">High School GPA</a></li>
+            <li><a href="/cumulative-gpa-calculator/">Cumulative GPA</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms-conditions/">Terms &amp; Conditions</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 <span class="footer-accent">Grade Calculator</span>. All rights reserved.</p>
+        <p>Built for students, by students.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+
+  <!-- ══ MATH CALCULATOR LOGIC ══ -->
+  <script>
+  (function() {
+    'use strict';
+
+    /* ─── State ─── */
+    let mcExpr       = '';
+    let mcLastResult = null;
+    let mcNewNum     = false;
+    let mcMode       = 'standard';
+    let mcUseDeg     = true;
+    let mcHistory    = [];
+
+    const tips = [
+      'Tip: Switch to Scientific mode for sin, cos, log, √ and more school functions.',
+      'Tip: Press % after a number to convert it to a percentage (e.g. 50 ÷ 200 %).',
+      'Tip: Use x² to quickly square any number.',
+      'Tip: π ≈ 3.14159 — use it in area and circumference formulas.',
+      'Tip: log is base-10; ln is the natural log (base e).',
+      'Tip: √x computes the square root of the current entry.',
+      'Tip: Your calculation history is saved until you clear it.',
+    ];
+    let tipIdx = 0;
+
+    /* ─── DOM refs ─── */
+    const exprEl    = document.getElementById('mc-expr');
+    const resultEl  = document.getElementById('mc-result');
+    const acBtn     = document.getElementById('mc-ac-btn');
+    const sciRows   = document.getElementById('mc-sci-rows');
+    const histPanel = document.getElementById('mc-history');
+    const histList  = document.getElementById('mc-history-list');
+    const tipText   = document.getElementById('mc-tip-text');
+    const angleLbl  = document.getElementById('mc-angle-label');
+    const angleBtn  = document.getElementById('mc-angle-btn');
+
+    /* ─── Helpers ─── */
+    function toRad(deg) { return deg * Math.PI / 180; }
+
+    function updateDisplay() {
+      exprEl.textContent    = mcExpr || '\u00a0';
+      resultEl.textContent  = mcExpr ? '' : (mcLastResult !== null ? mcLastResult : '0');
+      acBtn.textContent     = mcExpr ? 'C' : 'AC';
+    }
+
+    function showResult(val) {
+      const display = (Math.abs(val) < 1e15 && !isNaN(val))
+        ? parseFloat(val.toFixed(10)).toString()
+        : val.toString();
+      resultEl.textContent = display;
+      exprEl.textContent   = mcExpr || '\u00a0';
+      acBtn.textContent    = 'AC';
+    }
+
+    function pushHistory(expr, result) {
+      mcHistory.unshift({ expr, result });
+      if (mcHistory.length > 30) mcHistory.pop();
+      renderHistory();
+    }
+
+    function renderHistory() {
+      if (mcHistory.length === 0) {
+        histList.innerHTML = '<div class="mc-hist-empty">No calculations yet</div>';
+        return;
+      }
+      histList.innerHTML = mcHistory.map((h, i) => `
+        <div class="mc-hist-item" onclick="mcRecall(${i})">
+          <div class="mc-hist-expr">${h.expr}</div>
+          <div class="mc-hist-val">= ${h.result}</div>
+        </div>
+      `).join('');
+    }
+
+    /* ─── Exposed globals ─── */
+    window.mcRecall = function(i) {
+      const entry = mcHistory[i];
+      if (!entry) return;
+      mcExpr       = String(entry.result);
+      mcLastResult = entry.result;
+      mcNewNum     = false;
+      updateDisplay();
+    };
+
+    window.mcSetMode = function(mode) {
+      mcMode = mode;
+      document.getElementById('mc-mode-std').classList.toggle('active', mode === 'standard');
+      document.getElementById('mc-mode-sci').classList.toggle('active', mode === 'scientific');
+      sciRows.style.display = mode === 'scientific' ? 'block' : 'none';
+      angleLbl.style.display = mode === 'scientific' ? 'block' : 'none';
+      rotateTip();
+    };
+
+    window.mcToggleHistory = function() {
+      const open = histPanel.style.display === 'none';
+      histPanel.style.display = open ? 'flex' : 'none';
+      document.getElementById('mc-hist-btn').classList.toggle('active', open);
+    };
+
+    window.mcClearHistory = function() {
+      mcHistory = [];
+      renderHistory();
+    };
+
+    window.mcAngleToggle = function() {
+      mcUseDeg = !mcUseDeg;
+      const lbl = mcUseDeg ? 'DEG' : 'RAD';
+      angleBtn.textContent  = lbl;
+      angleLbl.textContent  = lbl;
+    };
+
+    window.mcAppend = function(val) {
+      if (mcNewNum) { mcExpr = ''; mcNewNum = false; }
+      mcExpr += val;
+      updateDisplay();
+    };
+
+    window.mcInsert = function(raw) {
+      if (mcNewNum) { mcExpr = ''; mcNewNum = false; }
+      mcExpr += raw;
+      updateDisplay();
+    };
+
+    window.mcDot = function() {
+      if (mcNewNum) { mcExpr = '0'; mcNewNum = false; }
+      // Only add dot if last segment doesn't already have one
+      const parts = mcExpr.split(/[+\-*/]/);
+      if (!parts[parts.length - 1].includes('.')) mcExpr += '.';
+      updateDisplay();
+    };
+
+    window.mcBackspace = function() {
+      if (mcNewNum) { mcExpr = ''; mcNewNum = false; }
+      mcExpr = mcExpr.slice(0, -1);
+      updateDisplay();
+    };
+
+    window.mcClear = function() {
+      mcExpr       = '';
+      mcLastResult = null;
+      mcNewNum     = false;
+      resultEl.textContent = '0';
+      exprEl.textContent   = '\u00a0';
+      acBtn.textContent    = 'AC';
+    };
+
+    window.mcToggleSign = function() {
+      if (!mcExpr) return;
+      mcExpr = mcExpr.startsWith('-') ? mcExpr.slice(1) : '-' + mcExpr;
+      updateDisplay();
+    };
+
+    window.mcPercent = function() {
+      if (!mcExpr) return;
+      try {
+        const val = Function('"use strict"; return (' + mcExpr + ')')() / 100;
+        mcExpr = String(val);
+        updateDisplay();
+      } catch(e) {}
+    };
+
+    window.mcFn = function(fn) {
+      if (mcNewNum) { mcExpr = ''; mcNewNum = false; }
+      const needsArg = fn === 'sqrt' || fn === 'sin' || fn === 'cos' || fn === 'tan' || fn === 'log' || fn === 'ln';
+      if (mcExpr === '' || mcExpr === '0') {
+        // open paren style
+        const prefix = {
+          sqrt: 'Math.sqrt(',
+          sin:  mcUseDeg ? '(x=>Math.sin(x*Math.PI/180))(' : 'Math.sin(',
+          cos:  mcUseDeg ? '(x=>Math.cos(x*Math.PI/180))(' : 'Math.cos(',
+          tan:  mcUseDeg ? '(x=>Math.tan(x*Math.PI/180))(' : 'Math.tan(',
+          log:  'Math.log10(',
+          ln:   'Math.log(',
+        }[fn] || '';
+        mcExpr = prefix;
+        updateDisplay();
+        return;
+      }
+      // Apply to current expression
+      try {
+        const raw = Function('"use strict"; return (' + mcExpr + ')')();
+        let result;
+        switch(fn) {
+          case 'sqrt': result = Math.sqrt(raw); break;
+          case 'sin':  result = mcUseDeg ? Math.sin(toRad(raw)) : Math.sin(raw); break;
+          case 'cos':  result = mcUseDeg ? Math.cos(toRad(raw)) : Math.cos(raw); break;
+          case 'tan':  result = mcUseDeg ? Math.tan(toRad(raw)) : Math.tan(raw); break;
+          case 'log':  result = Math.log10(raw); break;
+          case 'ln':   result = Math.log(raw); break;
+          default: return;
+        }
+        const fnLabel = fn === 'ln' ? 'ln' : fn;
+        pushHistory(`${fnLabel}(${parseFloat(raw.toFixed(8))})`, parseFloat(result.toFixed(10)));
+        mcExpr = String(parseFloat(result.toFixed(10)));
+        mcLastResult = mcExpr;
+        mcNewNum = true;
+        showResult(result);
+      } catch(e) {
+        resultEl.textContent = 'Error';
+        mcExpr = '';
+        mcNewNum = true;
+      }
+    };
+
+    window.mcPower = function(exp) {
+      if (!mcExpr) return;
+      try {
+        const raw = Function('"use strict"; return (' + mcExpr + ')')();
+        const result = Math.pow(raw, exp);
+        pushHistory(`(${parseFloat(raw.toFixed(8))})^${exp}`, parseFloat(result.toFixed(10)));
+        mcExpr = String(parseFloat(result.toFixed(10)));
+        mcLastResult = mcExpr;
+        mcNewNum = true;
+        showResult(result);
+      } catch(e) {
+        resultEl.textContent = 'Error';
+        mcExpr = '';
+        mcNewNum = true;
+      }
+    };
+
+    window.mcEquals = function() {
+      if (!mcExpr) return;
+      const exprSaved = mcExpr
+        .replace(/×/g,'*').replace(/÷/g,'/')
+        .replace(/−/g,'-');
+      try {
+        const result = Function('"use strict"; return (' + exprSaved + ')')();
+        if (typeof result !== 'number' || !isFinite(result)) throw new Error('bad');
+        const neat = parseFloat(result.toFixed(10));
+        pushHistory(
+          mcExpr.replace(/Math\.PI/g,'π').replace(/Math\.E/g,'e').replace(/Math\./g,''),
+          neat
+        );
+        mcLastResult = String(neat);
+        showResult(neat);
+        mcExpr   = String(neat);
+        mcNewNum = true;
+      } catch(e) {
+        resultEl.textContent = 'Error';
+        exprEl.textContent   = mcExpr;
+        mcExpr   = '';
+        mcNewNum = true;
+      }
+    };
+
+    /* ─── Keyboard support ─── */
+    document.addEventListener('keydown', function(e) {
+      const tag = document.activeElement.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+      if ('0123456789'.includes(e.key)) { mcAppend(e.key); }
+      else if (e.key === '+') { mcAppend('+'); }
+      else if (e.key === '-') { mcAppend('-'); }
+      else if (e.key === '*') { mcAppend('*'); }
+      else if (e.key === '/') { e.preventDefault(); mcAppend('/'); }
+      else if (e.key === '.') { mcDot(); }
+      else if (e.key === 'Enter' || e.key === '=') { mcEquals(); }
+      else if (e.key === 'Backspace') { mcBackspace(); }
+      else if (e.key === 'Escape') { mcClear(); }
+      else if (e.key === '%') { mcPercent(); }
+    });
+
+    /* ─── Rotate tips ─── */
+    function rotateTip() {
+      tipIdx = (tipIdx + 1) % tips.length;
+      tipText.textContent = tips[tipIdx];
+    }
+    setInterval(rotateTip, 6000);
+
+    /* ─── Init ─── */
+    sciRows.style.display = 'none';
+    updateDisplay();
+  })();
+  </script>
+</body>
+
+</html>

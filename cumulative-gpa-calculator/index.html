@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Cumulative GPA Calculator – Track Your Overall GPA Across Semesters</title>
+  <meta name="description" content="Free Cumulative GPA Calculator. Add multiple semesters, enter grades and credits, and track your overall GPA instantly. Supports 4.0 and 5.0 scales and transfer credits.">
+  <meta name="keywords" content="cumulative GPA calculator, overall GPA calculator, semester GPA tracker, college GPA calculator, transfer credit GPA, total GPA calculator">
+  <meta name="author" content="Grade Calculator">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://gradecalculator.com/cumulative-gpa-calculator/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Grade Calculator">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Cumulative GPA Calculator – Track Your Overall GPA Across Semesters">
+  <meta property="og:description" content="Add multiple semesters and courses to track your cumulative GPA. Supports transfer credits, 4.0 and 5.0 scales, and per-semester breakdowns.">
+  <meta property="og:url" content="https://gradecalculator.com/cumulative-gpa-calculator/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cumulative GPA Calculator – Full Semester GPA Tracker">
+  <meta name="twitter:description" content="Track your overall GPA across semesters. Supports transfer credits, 4.0/5.0 scales. Free and instant.">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Cumulative GPA Calculator",
+        "url": "https://gradecalculator.com/cumulative-gpa-calculator/",
+        "description": "Free cumulative GPA calculator. Add multiple semesters, include prior credits, and see your overall GPA across all terms.",
+        "applicationCategory": "EducationApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+        "featureList": ["Multiple semesters", "Prior GPA transfer credits", "4.0 and 5.0 GPA scales", "Per-semester breakdown", "Instant cumulative result"],
+        "provider": {"@type": "Organization", "name": "Grade Calculator", "url": "https://gradecalculator.com"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://gradecalculator.com/"},
+          {"@type":"ListItem","position":2,"name":"Cumulative GPA Calculator","item":"https://gradecalculator.com/cumulative-gpa-calculator/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I include transfer credits?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Yes! Enter your prior institution's GPA and total credit count in the Prior GPA section, and this calculator will factor it into your overall cumulative result."}
+          },
+          {
+            "@type": "Question",
+            "name": "How do I raise my cumulative GPA?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Because cumulative GPA is credit-weighted, taking a heavier course load with high grades in future semesters has the biggest impact. Retaking courses where you earned low grades also helps."}
+          },
+          {
+            "@type": "Question",
+            "name": "What do GPA standings mean?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Generally: 3.7–4.0 = Summa Cum Laude, 3.5–3.69 = Magna Cum Laude, 3.0–3.49 = Cum Laude, 2.0–2.99 = Good Standing, below 2.0 = Academic Probation risk."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/calculators.css">
+</head>
+<body>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<header id="site-header" class="site-header">
+  <div class="container header-container">
+    <a href="/" class="logo">Grade Calculator</a>
+    <nav id="nav-menu" class="nav-menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Calculators <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="/easy-grade-calculator/">Easy Grade Calculator</a></li>
+            <li><a href="/average-grade-calculator/">Average Grade Calculator</a></li>
+            <li><a href="/final-grade-calculator/">Final Grade Calculator</a></li>
+            <li><a href="/gpa-calculator/">GPA Calculator</a></li>
+            <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">GPA Tools <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="/high-school-gpa-calculator/">High School GPA Calculator</a></li>
+            <li><a href="/cumulative-gpa-calculator/">Cumulative GPA Calculator</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact/">Contact</a></li>
+        <li class="dropdown nav-cta">
+          <a href="javascript:void(0)" class="dropdown-toggle">Explore Tools <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+          <ul class="dropdown-menu mega-grid">
+            <li><a href="/easy-grade-calculator/"><span class="tool-icon">🎯</span> Easy Grade</a></li>
+            <li><a href="/average-grade-calculator/"><span class="tool-icon">📊</span> Average Grade</a></li>
+            <li><a href="/final-grade-calculator/"><span class="tool-icon">🎓</span> Final Grade</a></li>
+            <li><a href="/gpa-calculator/"><span class="tool-icon">📐</span> GPA Calc</a></li>
+            <li><a href="/percentage-calculator/"><span class="tool-icon">🔢</span> Percentage</a></li>
+            <li><a href="/high-school-gpa-calculator/"><span class="tool-icon">🏫</span> High School</a></li>
+            <li><a href="/cumulative-gpa-calculator/"><span class="tool-icon">📈</span> Cumulative</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ════ CALCULATOR ════ -->
+  <section class="container calculator-wrapper cumulative-gpa-wrapper">
+    <div class="glass-card">
+
+      <!-- Page header -->
+      <div class="calc-page-header">
+        <div class="calc-icon-wrap icon-teal">📈</div>
+        <div>
+          <h1>Cumulative GPA Calculator</h1>
+          <p>Track your overall GPA across multiple semesters. Add courses per semester and watch your cumulative GPA update in real time.</p>
+        </div>
+      </div>
+
+      <!-- Scale toggle -->
+      <div class="scale-toggle-bar">
+        <span class="scale-label">GPA Scale:</span>
+        <div class="scale-tabs" role="group">
+          <button type="button" class="scale-tab active" data-scale="4" id="cum-tab-4">4.0 Scale</button>
+          <button type="button" class="scale-tab" data-scale="5" id="cum-tab-5">5.0 Weighted</button>
+        </div>
+      </div>
+
+      <!-- GPA Scale reference panel -->
+      <div class="gpa-scale-panel" id="cum-scale-panel">
+        <div class="scale-table-header">
+          <span>Grade Scale Reference</span>
+          <button type="button" class="scale-toggle-btn" id="cum-toggle-scale-table">Show ▾</button>
+        </div>
+        <div class="scale-table-body" id="cum-scale-table-body" style="display:none;">
+          <table class="gpa-scale-table">
+            <thead>
+              <tr>
+                <th>Letter</th>
+                <th>Percentage</th>
+                <th>4.0 Points</th>
+                <th>5.0 Points</th>
+              </tr>
+            </thead>
+            <tbody id="cum-scale-tbody">
+              <!-- filled by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Existing GPA (optional) -->
+      <div class="prior-gpa-card">
+        <div class="prior-gpa-header">
+          <span class="section-tag" style="margin-bottom:0;">Optional: Include Prior GPA</span>
+        </div>
+        <div class="input-row prior-gpa-inputs">
+          <div class="form-group">
+            <label for="prior-gpa">Previous Cumulative GPA</label>
+            <input type="number" id="prior-gpa" placeholder="e.g. 3.50" step="0.01" min="0" max="5">
+          </div>
+          <div class="form-group">
+            <label for="prior-credits">Total Prior Credits</label>
+            <input type="number" id="prior-credits" placeholder="e.g. 60" step="0.5" min="0">
+          </div>
+        </div>
+      </div>
+
+      <!-- Semesters -->
+      <div id="semesters-container">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- Add semester + Calculate -->
+      <div class="form-actions" style="margin-top: 1.5rem;">
+        <button type="button" class="btn-secondary" id="add-semester-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Add Semester
+        </button>
+        <button type="button" class="btn-primary" id="calc-cum-gpa-btn">Calculate Cumulative GPA</button>
+      </div>
+
+      <!-- Result -->
+      <div id="cum-result-box" class="calc-result-box">
+        <div class="result-grid">
+          <div class="result-col">
+            <div class="result-label">Cumulative GPA</div>
+            <div id="cum-gpa-value" class="result-value">0.00</div>
+          </div>
+          <div class="result-col">
+            <div class="result-label">Total Credits</div>
+            <div id="cum-credits-value" class="result-value result-value--sm">0</div>
+          </div>
+          <div class="result-col">
+            <div class="result-label">Standing</div>
+            <div id="cum-standing-value" class="result-value result-value--sm">—</div>
+          </div>
+        </div>
+        <div id="cum-gpa-message" class="result-message"></div>
+        <!-- Per-semester breakdown -->
+        <div id="semester-breakdown" class="semester-breakdown"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════ SEO CONTENT ════ -->
+  <section class="container seo-content">
+    <div class="content-box">
+        <h2>Cumulative GPA Calculator</h2>
+        <p>A Cumulative GPA Calculator helps you calculate your overall GPA across all semesters by combining your previous and current grades with their credit hours. Instead of looking at one term only, it gives a complete picture of your academic performance over time. You enter each semester’s GPA or individual course grades, and the tool calculates your total GPA accurately, showing how every subject and credit contributes to your final academic record.</p>
+    </div>
+  </section>
+
+  <!-- ════ RELATED TOOLS ════ -->
+  <section class="container">
+    <div class="related-tools">
+      <h2>More Calculator Tools</h2>
+      <div class="tags-container">
+        <a href="/easy-grade-calculator/" class="tool-tag">Easy Grade Calculator</a>
+        <a href="/average-grade-calculator/" class="tool-tag">Average Grade Calculator</a>
+        <a href="/final-grade-calculator/" class="tool-tag">Final Grade Calculator</a>
+        <a href="/gpa-calculator/" class="tool-tag">GPA Calculator</a>
+        <a href="/high-school-gpa-calculator/" class="tool-tag">High School GPA Calculator</a>
+        <a href="/percentage-calculator/" class="tool-tag">Percentage Calculator</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="/" class="logo">Grade Calculator</a>
+        <p>Your go-to modern tools for academic success. Clean, fast, and completely free to use — always.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/easy-grade-calculator/">Easy Grade Calculator</a></li>
+          <li><a href="/average-grade-calculator/">Average Grade Calculator</a></li>
+          <li><a href="/final-grade-calculator/">Final Grade Calculator</a></li>
+          <li><a href="/gpa-calculator/">GPA Calculator</a></li>
+          <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+          <li><a href="/high-school-gpa-calculator/">High School GPA</a></li>
+          <li><a href="/cumulative-gpa-calculator/">Cumulative GPA</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-conditions/">Terms &amp; Conditions</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 <span class="footer-accent">Grade Calculator</span>. All rights reserved.</p>
+      <p>Built for students, by students.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/cumulative-gpa.js"></script>
+</body>
+</html>

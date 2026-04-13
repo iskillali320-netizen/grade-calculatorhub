@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>High School GPA Calculator – Weighted & Unweighted 4.0 / 5.0 Scale</title>
+  <meta name="description" content="Free High School GPA Calculator. Calculate weighted or unweighted GPA on a 4.0 or 5.0 scale with support for AP, Honors, and Regular courses. Instant results.">
+  <meta name="keywords" content="high school GPA calculator, weighted GPA calculator, unweighted GPA calculator, 4.0 GPA, 5.0 GPA, AP GPA calculator, honors GPA calculator">
+  <meta name="author" content="Grade Calculator">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://gradecalculator.com/high-school-gpa-calculator/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Grade Calculator">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="High School GPA Calculator – Weighted & Unweighted 4.0/5.0">
+  <meta property="og:description" content="Calculate your weighted or unweighted high school GPA. Supports AP, Honors, and Regular courses on 4.0 and 5.0 scales. Free and instant.">
+  <meta property="og:url" content="https://gradecalculator.com/high-school-gpa-calculator/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="High School GPA Calculator – Weighted & Unweighted">
+  <meta name="twitter:description" content="Calculate weighted or unweighted high school GPA on a 4.0 or 5.0 scale. Supports AP, Honors, and Regular courses.">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "High School GPA Calculator",
+        "url": "https://gradecalculator.com/high-school-gpa-calculator/",
+        "description": "Free high school GPA calculator supporting weighted and unweighted GPA on 4.0 and 5.0 scales with AP, Honors, and Regular course types.",
+        "applicationCategory": "EducationApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+        "featureList": ["4.0 and 5.0 GPA scales", "AP, Honors, Regular course types", "Weighted and unweighted GPA", "Dynamic course rows", "Grade scale reference table"],
+        "provider": {"@type": "Organization", "name": "Grade Calculator", "url": "https://gradecalculator.com"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://gradecalculator.com/"},
+          {"@type":"ListItem","position":2,"name":"High School GPA Calculator","item":"https://gradecalculator.com/high-school-gpa-calculator/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which GPA scale do colleges prefer?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Most colleges recalculate GPA on their own scale. However, a weighted GPA demonstrates willingness to take challenging courses, which is a positive signal in college applications."}
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good high school GPA?",
+            "acceptedAnswer": {"@type": "Answer", "text": "A 3.5+ unweighted GPA is considered strong for most college applications. Top universities look for students with 3.9+ unweighted or 4.5+ weighted GPAs."}
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between weighted and unweighted GPA?",
+            "acceptedAnswer": {"@type": "Answer", "text": "An unweighted GPA (4.0 scale) treats all classes equally. A weighted GPA (5.0 scale) rewards harder coursework — an A in an AP class is worth 5.0 vs 4.0 in a regular class."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/calculators.css">
+</head>
+<body>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<header id="site-header" class="site-header">
+  <div class="container header-container">
+    <a href="/" class="logo">Grade Calculator</a>
+    <nav id="nav-menu" class="nav-menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Calculators <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="/easy-grade-calculator/">Easy Grade Calculator</a></li>
+            <li><a href="/average-grade-calculator/">Average Grade Calculator</a></li>
+            <li><a href="/final-grade-calculator/">Final Grade Calculator</a></li>
+            <li><a href="/gpa-calculator/">GPA Calculator</a></li>
+            <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">GPA Tools <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="/high-school-gpa-calculator/">High School GPA Calculator</a></li>
+            <li><a href="/cumulative-gpa-calculator/">Cumulative GPA Calculator</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact/">Contact</a></li>
+        <li class="dropdown nav-cta">
+          <a href="javascript:void(0)" class="dropdown-toggle">Explore Tools <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+          <ul class="dropdown-menu mega-grid">
+            <li><a href="/easy-grade-calculator/"><span class="tool-icon">🎯</span> Easy Grade</a></li>
+            <li><a href="/average-grade-calculator/"><span class="tool-icon">📊</span> Average Grade</a></li>
+            <li><a href="/final-grade-calculator/"><span class="tool-icon">🎓</span> Final Grade</a></li>
+            <li><a href="/gpa-calculator/"><span class="tool-icon">📐</span> GPA Calc</a></li>
+            <li><a href="/percentage-calculator/"><span class="tool-icon">🔢</span> Percentage</a></li>
+            <li><a href="/high-school-gpa-calculator/"><span class="tool-icon">🏫</span> High School</a></li>
+            <li><a href="/cumulative-gpa-calculator/"><span class="tool-icon">📈</span> Cumulative</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ════ CALCULATOR ════ -->
+  <section class="container calculator-wrapper hs-gpa-wrapper">
+    <div class="glass-card">
+
+      <!-- Page title -->
+      <div class="calc-page-header">
+        <div class="calc-icon-wrap icon-orange">🏫</div>
+        <div>
+          <h1>High School GPA Calculator</h1>
+          <p>Calculate your weighted or unweighted GPA on a 4.0 or 5.0 scale — supports AP, Honors &amp; Regular courses.</p>
+        </div>
+      </div>
+
+      <!-- Scale toggle -->
+      <div class="scale-toggle-bar">
+        <span class="scale-label">GPA Scale:</span>
+        <div class="scale-tabs" role="group">
+          <button type="button" class="scale-tab active" data-scale="4" id="tab-4">4.0 Unweighted</button>
+          <button type="button" class="scale-tab" data-scale="5" id="tab-5">5.0 Weighted</button>
+        </div>
+      </div>
+
+      <!-- GPA Scale reference table -->
+      <div class="gpa-scale-panel" id="scale-panel">
+        <div class="scale-table-header">
+          <span>Grade Scale Reference</span>
+          <button type="button" class="scale-toggle-btn" id="toggle-scale-table">Show ▾</button>
+        </div>
+        <div class="scale-table-body" id="scale-table-body" style="display:none;">
+          <table class="gpa-scale-table" id="gpa-scale-table">
+            <thead>
+              <tr>
+                <th>Letter</th>
+                <th>Percentage</th>
+                <th>Regular (4.0)</th>
+                <th>Honors (+0.5)</th>
+                <th>AP/IB (+1.0)</th>
+              </tr>
+            </thead>
+            <tbody id="scale-tbody">
+              <!-- filled by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form id="hs-gpa-form" class="calc-form" novalidate>
+
+        <!-- Column headers -->
+        <div class="gpa-col-headers">
+          <span>Course Name</span>
+          <span>Grade</span>
+          <span>Credits</span>
+          <span>Type</span>
+          <span></span>
+        </div>
+
+        <div id="hs-rows-container" class="dynamic-rows-container">
+          <!-- rows injected by JS -->
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" id="add-hs-row">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Add Course
+          </button>
+          <button type="submit" class="btn-primary">Calculate GPA</button>
+        </div>
+      </form>
+
+      <!-- Result -->
+      <div id="hs-result-box" class="calc-result-box">
+        <div class="result-grid">
+          <div class="result-col">
+            <div class="result-label">Your GPA</div>
+            <div id="hs-gpa-value" class="result-value">0.00</div>
+          </div>
+          <div class="result-col">
+            <div class="result-label">Total Credits</div>
+            <div id="hs-credits-value" class="result-value result-value--sm">0</div>
+          </div>
+          <div class="result-col">
+            <div class="result-label">Letter Grade</div>
+            <div id="hs-letter-value" class="result-value result-value--sm">—</div>
+          </div>
+        </div>
+        <div id="hs-gpa-message" class="result-message"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════ SEO CONTENT ════ -->
+  <section class="container seo-content">
+    <div class="content-box">
+        <h2>High School GPA Calculator</h2>
+        <p>A High School GPA Calculator helps students quickly calculate their grade point average using course grades, credit hours, and a standard grading scale. It converts letter grades like A, B, and C into grade points and then calculates a weighted average based on each subject’s importance. This makes it easier to track academic performance, plan for college admissions, and understand how different classes, assignments, and exams affect your overall GPA.</p>
+    </div>
+  </section>
+
+  <!-- ════ RELATED TOOLS ════ -->
+  <section class="container">
+    <div class="related-tools">
+      <h2>More Calculator Tools</h2>
+      <div class="tags-container">
+        <a href="/easy-grade-calculator/" class="tool-tag">Easy Grade Calculator</a>
+        <a href="/average-grade-calculator/" class="tool-tag">Average Grade Calculator</a>
+        <a href="/final-grade-calculator/" class="tool-tag">Final Grade Calculator</a>
+        <a href="/gpa-calculator/" class="tool-tag">GPA Calculator</a>
+        <a href="/cumulative-gpa-calculator/" class="tool-tag">Cumulative GPA Calculator</a>
+        <a href="/percentage-calculator/" class="tool-tag">Percentage Calculator</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="/" class="logo">Grade Calculator</a>
+        <p>Your go-to modern tools for academic success. Clean, fast, and completely free to use — always.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/easy-grade-calculator/">Easy Grade Calculator</a></li>
+          <li><a href="/average-grade-calculator/">Average Grade Calculator</a></li>
+          <li><a href="/final-grade-calculator/">Final Grade Calculator</a></li>
+          <li><a href="/gpa-calculator/">GPA Calculator</a></li>
+          <li><a href="/percentage-calculator/">Percentage Calculator</a></li>
+          <li><a href="/high-school-gpa-calculator/">High School GPA</a></li>
+          <li><a href="/cumulative-gpa-calculator/">Cumulative GPA</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-conditions/">Terms &amp; Conditions</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 <span class="footer-accent">Grade Calculator</span>. All rights reserved.</p>
+      <p>Built for students, by students.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/hs-gpa.js"></script>
+</body>
+</html>

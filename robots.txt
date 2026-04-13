@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block irrelevant system files
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+Sitemap: https://gradecalculator.com/sitemap.xml
