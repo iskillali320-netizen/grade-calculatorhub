@@ -5,4 +5,4 @@ Allow: /
 Disallow: /assets/js/
 Disallow: /assets/css/
 
-Sitemap: https://iskillali320-netizen.github.io/grade-calculatorhub/sitemap.xml
+Sitemap: https://finalgradecalculator.tech/sitemap.xml
