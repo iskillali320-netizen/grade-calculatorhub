@@ -1330,6 +1330,74 @@ section {
 }
 
 /* ═══════════════════════════════════════════
+   SEO CONTENT ADDITIONS
+═══════════════════════════════════════════ */
+.how-to-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.step-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--bg-elevated);
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.step-number {
+  background: var(--primary);
+  color: var(--white);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.step-text {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.example-box {
+  background: rgba(0, 212, 170, 0.05);
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin: 1.5rem 0;
+}
+
+.example-box p {
+  margin-bottom: 0.5rem;
+}
+.example-box p:last-child {
+  margin-bottom: 0;
+}
+
+.formula-highlight {
+  background: rgba(108, 71, 255, 0.1);
+  border: 1px dashed rgba(108, 71, 255, 0.4);
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--primary-light);
+  margin: 1.5rem 0;
+}
+
+/* ═══════════════════════════════════════════
    RELATED TOOLS SECTION
 ═══════════════════════════════════════════ */
 .related-tools {
