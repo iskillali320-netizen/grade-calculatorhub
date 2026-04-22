@@ -1,8 +1,12 @@
 User-agent: *
 Allow: /
 
-# Block irrelevant system files
-Disallow: /assets/js/
-Disallow: /assets/css/
+# Block only dev/build files — allow all public assets
+Disallow: /.git/
+Disallow: /create_zip.ps1
+Disallow: /fix_links.ps1
+Disallow: /fix_quotes.ps1
+Disallow: /fix_root_links.ps1
+Disallow: /fix_paths_relative.ps1
 
 Sitemap: https://finalgradecalculator.tech/sitemap.xml
