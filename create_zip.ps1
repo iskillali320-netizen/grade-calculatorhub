@@ -12,8 +12,8 @@ if (Test-Path $dest) {
 # Create new zip
 $zip = [System.IO.Compression.ZipFile]::Open($dest, 'Create')
 
-# Folders/files to exclude from the zip
-$excludeNames = @('.git', 'create_zip.ps1', 'fix_links.ps1', 'fix_quotes.ps1', 'fix_root_links.ps1', 'fix_paths_relative.ps1')
+# Folders/files to exclude from the zip (keep .htaccess — it's needed on server!)
+$excludeNames = @('.git', 'create_zip.ps1', 'fix_links.ps1', 'fix_quotes.ps1', 'fix_root_links.ps1', 'fix_paths_relative.ps1', 'fix_for_hostinger.ps1')
 
 function Add-FolderToZip {
     param(
