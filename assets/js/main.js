@@ -71,8 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 
                 // Close mobile menu if open
-                mobileToggle.classList.remove('active');
-                navMenu.classList.remove('active');
+                if (mobileToggle) mobileToggle.classList.remove('active');
+                if (navMenu) navMenu.classList.remove('active');
                 document.body.style.overflow = '';
             }
         });

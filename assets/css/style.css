@@ -8,6 +8,7 @@
 :root {
   /* Brand Colors */
   --primary: #6C47FF;
+  --primary-main: #6C47FF;
   --primary-light: #8B6AFF;
   --primary-dark: #5235CC;
   --accent: #00D4AA;
@@ -736,10 +737,14 @@ section {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   outline: none;
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .hfgc-input-wrap input::-webkit-outer-spin-button,
-.hfgc-input-wrap input::-webkit-inner-spin-button { -webkit-appearance: none; }
+.hfgc-input-wrap input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
 
 .hfgc-input-wrap input::placeholder { color: var(--text-tertiary); font-weight: 400; }
 
@@ -1474,21 +1479,14 @@ section {
 /* ═══════════════════════════════════════════
    SCROLL ANIMATIONS
 ═══════════════════════════════════════════ */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
+/* Note: .fade-up keyframe animation is defined in the Tools Grid section above.
+   Tool cards use the animation-based version; generic elements use this class
+   to add a visible-state transition when scrolled into view. */
 .fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  animation: none !important;
 }
-
-.fade-up:nth-child(2) { transition-delay: 0.1s; }
-.fade-up:nth-child(3) { transition-delay: 0.2s; }
-.fade-up:nth-child(4) { transition-delay: 0.3s; }
-.fade-up:nth-child(5) { transition-delay: 0.4s; }
 
 /* ═══════════════════════════════════════════
    RESPONSIVE
