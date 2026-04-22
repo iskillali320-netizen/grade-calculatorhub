@@ -75,7 +75,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20260416">
 </head>
 
 <body>
@@ -146,9 +146,10 @@
         <span class="dot"></span>
         Free Academic Tools &mdash; No Sign-up Required
       </div>
-      <h1>Calculate Your Grades<br><span class="gradient-text">with Ease & Precision</span></h1>
+      <h1>Calculate Your Grades<br><span class="gradient-text">with Ease &amp; Precision</span></h1>
       <p>A suite of modern, intelligent grade calculators designed to help students and teachers find averages,
         finals, percentages, and GPAs &mdash; instantly and accurately.</p>
+      <div class="hero-actions">
         <a href="#tools" class="btn-primary" id="hero-scroll-btn">
           Explore All Tools
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"
@@ -158,6 +159,60 @@
         </a>
         <a href="./easy-grade-calculator/" class="btn-outline">Try Easy Calculator</a>
       </div>
+
+      <!-- ── Hero Final Grade Calculator Widget ── -->
+      <div class="hfgc-wrap">
+        <div class="hfgc-header">
+          <span class="hfgc-icon">🎓</span>
+          <div>
+            <h2 class="hfgc-title">Final Grade Calculator</h2>
+            <p class="hfgc-subtitle">Find out what score you need on your final exam</p>
+          </div>
+        </div>
+
+        <div class="hfgc-body">
+          <div class="hfgc-fields">
+            <div class="hfgc-field">
+              <label for="hfgc-current">Current Grade (%)</label>
+              <div class="hfgc-input-wrap">
+                <input type="number" id="hfgc-current" min="0" max="100" step="0.1" placeholder="e.g. 82" />
+                <span class="hfgc-unit">%</span>
+              </div>
+            </div>
+            <div class="hfgc-field">
+              <label for="hfgc-weight">Final Exam Weight (%)</label>
+              <div class="hfgc-input-wrap">
+                <input type="number" id="hfgc-weight" min="1" max="100" step="1" placeholder="e.g. 30" />
+                <span class="hfgc-unit">%</span>
+              </div>
+            </div>
+            <div class="hfgc-field">
+              <label for="hfgc-desired">Desired Final Grade (%)</label>
+              <div class="hfgc-input-wrap">
+                <input type="number" id="hfgc-desired" min="0" max="100" step="0.1" placeholder="e.g. 90" />
+                <span class="hfgc-unit">%</span>
+              </div>
+            </div>
+            <button class="hfgc-btn" id="hfgc-calc-btn" onclick="hfgcCalculate()">
+              Calculate
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <div class="hfgc-result" id="hfgc-result" style="display:none;">
+            <div class="hfgc-result-label">You need to score</div>
+            <div class="hfgc-result-score" id="hfgc-score">--</div>
+            <div class="hfgc-result-grade" id="hfgc-letter">on your final exam</div>
+            <div class="hfgc-result-meta" id="hfgc-meta"></div>
+          </div>
+        </div>
+
+        <div class="hfgc-footer">
+          <a href="./final-grade-calculator/" class="hfgc-link">Open Full Calculator →</a>
+          <button class="hfgc-reset" onclick="hfgcReset()">Reset</button>
+        </div>
+      </div>
+
       <div class="hero-stats">
         <div class="stat-item">
           <div class="stat-value">7+</div>
@@ -435,7 +490,7 @@
     </div>
   </footer>
 
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/main.js?v=20260416"></script>
 
   <!-- ══ MATH CALCULATOR LOGIC ══ -->
   <script>
@@ -709,6 +764,110 @@
     updateDisplay();
   })();
   </script>
+
+  <!-- ══ HERO FINAL GRADE CALCULATOR ══ -->
+  <script>
+  (function () {
+    'use strict';
+
+    function letterGrade(score) {
+      if (score >= 97) return 'A+';
+      if (score >= 93) return 'A';
+      if (score >= 90) return 'A-';
+      if (score >= 87) return 'B+';
+      if (score >= 83) return 'B';
+      if (score >= 80) return 'B-';
+      if (score >= 77) return 'C+';
+      if (score >= 73) return 'C';
+      if (score >= 70) return 'C-';
+      if (score >= 67) return 'D+';
+      if (score >= 60) return 'D';
+      return 'F';
+    }
+
+    function metaMsg(score) {
+      if (score <= 60)  return '✅ Very achievable!';
+      if (score <= 75)  return '🎯 Totally doable — stay focused!';
+      if (score <= 90)  return '📚 Push hard — you can do it!';
+      if (score <= 100) return '⚡ Challenging but possible!';
+      return '⚠️ Requires extra effort beyond 100%';
+    }
+
+    window.hfgcCalculate = function () {
+      const currentEl  = document.getElementById('hfgc-current');
+      const weightEl   = document.getElementById('hfgc-weight');
+      const desiredEl  = document.getElementById('hfgc-desired');
+      const resultBox  = document.getElementById('hfgc-result');
+      const scoreEl    = document.getElementById('hfgc-score');
+      const letterEl   = document.getElementById('hfgc-letter');
+      const metaEl     = document.getElementById('hfgc-meta');
+
+      const current = parseFloat(currentEl.value);
+      const weight  = parseFloat(weightEl.value);
+      const desired = parseFloat(desiredEl.value);
+
+      // Validation
+      [currentEl, weightEl, desiredEl].forEach(el => el.style.borderColor = '');
+
+      let valid = true;
+      if (isNaN(current) || current < 0 || current > 100) {
+        currentEl.style.borderColor = '#FF4D6D'; valid = false;
+      }
+      if (isNaN(weight) || weight <= 0 || weight > 100) {
+        weightEl.style.borderColor = '#FF4D6D'; valid = false;
+      }
+      if (isNaN(desired) || desired < 0 || desired > 100) {
+        desiredEl.style.borderColor = '#FF4D6D'; valid = false;
+      }
+      if (!valid) return;
+
+      // Formula: Required = (Desired - Current * (1 - weight/100)) / (weight/100)
+      const w        = weight / 100;
+      const required = (desired - current * (1 - w)) / w;
+      const rounded  = Math.round(required * 10) / 10;
+
+      scoreEl.textContent  = rounded + '%';
+      letterEl.textContent = 'Grade needed: ' + letterGrade(Math.max(0, Math.min(100, rounded)));
+      metaEl.textContent   = metaMsg(rounded);
+
+      // Colour the score based on difficulty
+      const scoreStyle = scoreEl.style;
+      if (rounded <= 75) {
+        scoreStyle.background = 'linear-gradient(135deg,#00D4AA,#00F5C4)';
+      } else if (rounded <= 90) {
+        scoreStyle.background = 'linear-gradient(135deg,#6C47FF,#9F47FF)';
+      } else {
+        scoreStyle.background = 'linear-gradient(135deg,#FF4D6D,#FFB830)';
+      }
+      scoreStyle.webkitBackgroundClip = 'text';
+      scoreStyle.webkitTextFillColor  = 'transparent';
+      scoreStyle.backgroundClip       = 'text';
+
+      // Show result panel with animation restart
+      resultBox.style.display = 'none';
+      void resultBox.offsetWidth; // reflow
+      resultBox.style.display = 'flex';
+    };
+
+    window.hfgcReset = function () {
+      ['hfgc-current', 'hfgc-weight', 'hfgc-desired'].forEach(function(id) {
+        const el = document.getElementById(id);
+        el.value = '';
+        el.style.borderColor = '';
+      });
+      document.getElementById('hfgc-result').style.display = 'none';
+    };
+
+    // Allow Enter key inside inputs
+    ['hfgc-current', 'hfgc-weight', 'hfgc-desired'].forEach(function(id) {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') hfgcCalculate();
+      });
+    });
+  })();
+  </script>
 </body>
 
 </html>
+

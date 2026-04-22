@@ -621,6 +621,279 @@ section {
 }
 
 /* ═══════════════════════════════════════════
+   HERO FINAL GRADE CALCULATOR WIDGET
+   ═══════════════════════════════════════════ */
+.hfgc-wrap {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  margin: 3rem auto 3.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(108,71,255,0.12);
+  overflow: hidden;
+  animation: hfgc-in 0.7s cubic-bezier(0.22,1,0.36,1) both;
+}
+
+@keyframes hfgc-in {
+  from { opacity:0; transform: translateY(28px) scale(0.97); }
+  to   { opacity:1; transform: translateY(0)    scale(1);    }
+}
+
+.hfgc-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--gradient-brand);
+}
+
+/* Header row */
+.hfgc-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.6rem 2rem 1.2rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.hfgc-icon {
+  font-size: 2rem;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(108,71,255,0.12);
+  border: 1px solid rgba(108,71,255,0.25);
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+
+.hfgc-title {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.15rem !important;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.hfgc-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0 !important;
+  line-height: 1;
+}
+
+/* Body */
+.hfgc-body {
+  padding: 1.75rem 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* Fields grid */
+.hfgc-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 1rem;
+  align-items: end;
+  flex: 1;
+}
+
+.hfgc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.hfgc-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.hfgc-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hfgc-input-wrap input {
+  width: 100%;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+  -moz-appearance: textfield;
+}
+
+.hfgc-input-wrap input::-webkit-outer-spin-button,
+.hfgc-input-wrap input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+.hfgc-input-wrap input::placeholder { color: var(--text-tertiary); font-weight: 400; }
+
+.hfgc-input-wrap input:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(108,71,255,0.18);
+}
+
+.hfgc-unit {
+  position: absolute;
+  right: 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  pointer-events: none;
+}
+
+/* Calculate button */
+.hfgc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--gradient-brand);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1.5rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  align-self: end;
+  height: 50px;
+  box-shadow: 0 4px 18px rgba(108,71,255,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hfgc-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(108,71,255,0.55);
+}
+
+.hfgc-btn:active { transform: translateY(0); }
+
+/* Result panel */
+.hfgc-result {
+  flex-shrink: 0;
+  min-width: 190px;
+  background: linear-gradient(135deg, rgba(108,71,255,0.15) 0%, rgba(0,212,170,0.08) 100%);
+  border: 1px solid rgba(108,71,255,0.3);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  animation: hfgc-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+
+@keyframes hfgc-pop {
+  from { opacity:0; transform: scale(0.85); }
+  to   { opacity:1; transform: scale(1);    }
+}
+
+.hfgc-result-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hfgc-result-score {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+}
+
+.hfgc-result-grade {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.hfgc-result-meta {
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: 0.35rem;
+}
+
+/* Footer */
+.hfgc-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 1.4rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.hfgc-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  transition: color 0.2s ease;
+}
+
+.hfgc-link:hover { color: var(--accent); }
+
+.hfgc-reset {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  background: none;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hfgc-reset:hover {
+  color: var(--text-secondary);
+  border-color: var(--border-mid);
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .hfgc-fields {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hfgc-btn { grid-column: span 2; height: 48px; }
+  .hfgc-body { flex-direction: column; }
+  .hfgc-result { min-width: 100%; padding: 1rem; }
+  .hfgc-header { padding: 1.2rem 1.25rem 1rem; }
+  .hfgc-body { padding: 1.25rem; }
+  .hfgc-footer { padding: 0.85rem 1.25rem 1.1rem; }
+}
+
+@media (max-width: 460px) {
+  .hfgc-fields { grid-template-columns: 1fr; }
+  .hfgc-btn { grid-column: span 1; }
+}
+
+/* ═══════════════════════════════════════════
    HERO NAVIGATION
    ═══════════════════════════════════════════ */
 #hero-scroll-btn svg {
